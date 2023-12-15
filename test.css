@@ -281,3 +281,126 @@ form {
 .circle {
    border-radius: 50%;
   }
+
+
+.content{
+    display: flex;
+    position:absolute; 
+    margin-top: 140px;
+    margin-left: 70px;
+    height: auto;
+    flex-direction: column
+} 
+
+.block-blue{
+    display:flex;
+    width: 725px;
+    height: 366px;
+    border-radius: 20px;
+    background: #0DAABC;
+    margin-top: 30px;
+}
+.block-orange{
+    display: flex;
+    width: 352px;
+    height: 366px;
+    border-radius: 20px;
+    background: #242730;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.compound{
+    display: grid;
+    grid-template-rows: auto 1fr; 
+}
+.compound__content{
+    display: grid;
+    grid-template-columns: 725px 1fr;
+}
+
+.content__title{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.block-blue__photo{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+}
+.block-orange__photo{
+    object-fit: cover;
+    border-radius: 20px;
+}
+.block-blue__text-block{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 230px;
+    height: 160px;
+    position: absolute;
+}
+.block__title{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.3px;
+}
+.information-and-photos{
+    margin-top: 30px;
+    width: 250px;
+    height: 80px;
+    display: flex;
+}
+.name{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+}
+.views-weeks{
+    color: #ffffffd3;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+.information-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:10px ;
+}
+.time-block{
+    width: 55px;
+    height: 25px;
+    background-color:#242730d0;
+    border-radius: 5px;
+}
+time{
+    display: flex;
+    justify-items: center;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10px;
+    letter-spacing: 0.5px;
+    align-content: center;
+}
+
+
