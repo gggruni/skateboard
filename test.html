@@ -7,82 +7,112 @@
     <title>Document</title>
 </head>
 <body class="body">
-    <div class="head">
-        <div class="head__colums">
-            <div class="head__title">skateboard</div>
-            <div class="head__block-search"> </div>
-        </div>
-    </div>
+    <div class="colums">
+        
+    
     <div class="sidebar">
+            <div class="sidebar__title">skateboard</div>
         <div class="sidebar__menu">
-            <div class="sidebar__menu__text">MENU</div>
-            <div class="menu__element">
-                <div class="sidebar__icon sidebar__icon__orange">
-                    <img src="photo/Home.svg" alt="" width="20">
-                </div>
+        <div class="sidebar__menu__text">MENU</div>
+        <ul class="sidebar-list">            
+            <li>
+                <button class="menu__element">
+                <div class="sidebar__icon sidebar__icon__orange"><img src="photo/Home.svg" alt="" width="20"></div>
                 <div class="element__text">Discover</div>
-            </div>
-            <div class="menu__element">    
-                <div class="sidebar__icon">
-                    <img src="photo/Arrow - Right.svg" width="15">
-                </div>
+                </button>
+            </li>
+            <li>
+                <button class="menu__element">    
+                <div class="sidebar__icon"><img src="photo/Arrow - Right.svg" width="15"></div>
                 <div class="element__text element__text__gray">Trending</div>
-            </div>    
-            <div class="menu__element">    
-                <div class="sidebar__icon">
-                    <img src="photo/Download.svg" alt="" width="20">
-                </div>
+                </button>
+            </li>
+            <li>  
+                <button class="menu__element">    
+                <div class="sidebar__icon"><img src="photo/Download.svg" alt="" width="20"></div>
                 <div class="element__text element__text__gray">Streaming</div>
-            </div>    
-            <div class="menu__element">    
-                <div class="sidebar__icon">
-                    <img src="photo/Paper Download.svg" alt="" width="20">
-                </div>
+                </button>
+            </li>
+            <li>
+                <button class="menu__element">    
+                <div class="sidebar__icon"><img src="photo/Paper Download.svg" alt="" width="20"></div>
                 <div class="element__text element__text__gray">Playlist</div>
-            </div>    
-            <div class="menu__element">
-                <div class="sidebar__icon">
-                    <img src="photo/Wallet.svg" alt="" width="20"> 
-                </div>
+                </button>
+            </li>  
+            <li>
+                <button class="menu__element">
+                <div class="sidebar__icon"><img src="photo/Wallet.svg" alt="" width="20"> </div>
                 <div class="element__text element__text__gray">Bookmark</div>
-            </div>
+                </button>
+            </li>  
+        </ul>
         </div>
+
         <div class="sidebar__line"></div>
+
         <div class="sidebar__CATEGORY">
-            <div class="sidebar__CATEGORY__text">CATEGORY</div>
-            <div class="sidebar__CATEGORY__element">
-                <div class="sidebar__icon">
-                    <img src="photo/Home2.svg" alt="" width="20">
-                </div>
+        <div class="sidebar__CATEGORY__text">CATEGORY</div>
+        <ul class="sidebar-list">
+            <li>
+                <button class="sidebar__CATEGORY__element">
+                <div class="sidebar__icon"><img src="photo/Home2.svg" alt="" width="20"></div>
                 <div class="element__text element__text__gray">Live Stream</div>
-            </div>
-            <div class="sidebar__CATEGORY__element">
-                <div class="sidebar__icon">
-                    <img src="photo/Arrow - Right.svg" width="15">
-                </div>
+                </button>
+            </li>
+            <li>
+                <button class="sidebar__CATEGORY__element">
+                <div class="sidebar__icon"><img src="photo/Arrow - Right.svg" width="15"></div>
                 <div class="element__text element__text__gray">Tutorial</div>       
-            </div>
-            <div class="sidebar__CATEGORY__element">
-                <div class="sidebar__icon">
-                    <img src="photo/Download.svg" alt="" width="20">
-                </div>
+                </button>
+            </li>
+            <li>   
+                <button class="sidebar__CATEGORY__element">
+                <div class="sidebar__icon"><img src="photo/Download.svg" alt="" width="20"></div>
                 <div class="element__text element__text__gray">Competition</div>
-            </div>
-            <div class="sidebar__CATEGORY__element">
-                <div class="sidebar__icon">
-                    <img src="photo/Wallet.svg" alt="" width="20"> 
-                </div>
+                </button>
+            </li>
+            <li>     
+                <button class="sidebar__CATEGORY__element">
+                <div class="sidebar__icon"><img src="photo/Wallet.svg" alt="" width="20"> </div>
                 <div class="element__text element__text__gray">Community</div>
-            </div>
+                </button>
+            </li> 
+        </ul>   
         </div>
+
         <div class="sidebar__line"></div>
+
         <div class="location">
             <label class="switch">
-                <input type="checkbox" />
+                <input type="checkbox">
                 <span class="slider round"></span>
+                <div class="location_text">Night mode</div> 
             </label>
-        <div class="location__text">Night mode</div>    
         </div>
+    </div>
+    
+<div class="header">
+    <div class="header__search">
+        <div class="search__location">
+        <form class="form">
+            <input class="search" placeholder="Search">
+            <button class="search_button"></button>    
+        </form>
+            </div>   
+    </div>
+
+    <div class="header__profile">
+        <img class="circle" src="./photo/image 14.png">
+        <p class="profile__text">Thomas</p>
+        <button class="profile_button">
+            <img src="./photo/profile_arrow.svg">
+        </button>
+        <button class="profile_button">
+            <img class="location_notification" src="./photo/notification.svg">
+        </button>
+    </div>
+    </div>
+    </div>
     </div>
 </body>
 </html>
