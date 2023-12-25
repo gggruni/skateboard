@@ -4,144 +4,274 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="test.css">
+    <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
-<body class="body">
+<body id="body" class="body">
     <div class="colums">
         
     
-    <div class="sidebar">
-            <div class="sidebar__title">skateboard</div>
-        <div class="sidebar__menu">
-        <div class="sidebar__menu__text">MENU</div>
-        <ul class="sidebar-list">            
-            <li>
-                <button class="menu__element">
-                <div class="sidebar__icon sidebar__icon__orange"><img src="photo/Home.svg" alt="" width="20"></div>
-                <div class="element__text">Discover</div>
-                </button>
-            </li>
-            <li>
-                <button class="menu__element">    
-                <div class="sidebar__icon"><img src="photo/Arrow - Right.svg" width="15"></div>
-                <div class="element__text element__text__gray">Trending</div>
-                </button>
-            </li>
-            <li>  
-                <button class="menu__element">    
-                <div class="sidebar__icon"><img src="photo/Download.svg" alt="" width="20"></div>
-                <div class="element__text element__text__gray">Streaming</div>
-                </button>
-            </li>
-            <li>
-                <button class="menu__element">    
-                <div class="sidebar__icon"><img src="photo/Paper Download.svg" alt="" width="20"></div>
-                <div class="element__text element__text__gray">Playlist</div>
-                </button>
-            </li>  
-            <li>
-                <button class="menu__element">
-                <div class="sidebar__icon"><img src="photo/Wallet.svg" alt="" width="20"> </div>
-                <div class="element__text element__text__gray">Bookmark</div>
-                </button>
-            </li>  
-        </ul>
+        <div class="sidebar">
+            <div class="button_menu">
+                <div class="sidebar__title">skateboard</div><img class="menu" src="photo/square.svg" alt="" width="40">
+            </div>
+            <div class="sidebar__menu">
+            <div class="sidebar__menu__text">MENU</div>
+            <ul class="sidebar-list">            
+                <li>
+                    <div class="menu__element">
+                    <a class="sidebar__icon sidebar__icon__orange" href=""><img src="photo/Home.svg" alt="" width="20"></a>
+                    <a class="element__text" href="" >Discover</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu__element">    
+                    <a class="sidebar__icon" href=""><img src="photo/Arrow - Right.svg" width="15"></a>
+                    <a class="element__text element__text__gray" href="">Trending</a>
+                    </div>
+                </li>
+                <li>  
+                    <div class="menu__element">    
+                    <a class="sidebar__icon" href=""><img src="photo/Download.svg" alt="" width="20"></a>
+                    <a class="element__text element__text__gray" href="">Streaming</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu__element">    
+                    <a class="sidebar__icon" href=""><img src="photo/Paper Download.svg" alt="" width="20"></a>
+                    <a class="element__text element__text__gray" href="">Playlist</a>
+                    </div>
+                </li>  
+                <li>
+                    <div class="menu__element">
+                    <a class="sidebar__icon" href=""><img src="photo/Wallet.svg" alt="" width="20"></a>
+                    <a class="element__text element__text__gray" href="">Bookmark</a>
+                    </div>
+                </li>  
+            </ul>
+            </div>
+
+            <div class="sidebar__line"></div>
+
+            <div class="sidebar__CATEGORY">
+            <div class="sidebar__CATEGORY__text">CATEGORY</div>
+            <ul class="sidebar-list">
+                <li>
+                    <div class="sidebar__CATEGORY__element">
+                    <a class="sidebar__icon" href=""><img src="photo/Home2.svg" alt="" width="20"></a>
+                    <a class="element__text element__text__gray" href="">Live Stream</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="sidebar__CATEGORY__element">
+                    <a class="sidebar__icon" href=""><img src="photo/Arrow - Right.svg" width="15"></a>
+                    <a class="element__text element__text__gray" href="">Tutorial</a>       
+                    </div>
+                </li>
+                <li>   
+                    <div class="sidebar__CATEGORY__element">
+                    <a class="sidebar__icon" href=""><img src="photo/Download.svg" alt="" width="20"></a>
+                    <a class="element__text element__text__gray" href="">Competition</a>
+                    </div>
+                </li>
+                <li>     
+                    <div class="sidebar__CATEGORY__element">
+                    <a class="sidebar__icon" href=""><img src="photo/Wallet.svg" alt="" width="20"> </a>
+                    <a class="element__text element__text__gray" href="">Community</a>
+                    </div>
+                </li> 
+            </ul>   
+            </div>
+
+            <div class="sidebar__line"></div>
+
+            <div class="location">
+                <label class="switch">
+                    <input type="checkbox" id="slider" checked>
+                    <span class="slider round"></span>
+                    <div class="location_text">Night mode</div> 
+                </label>
+            </div>
         </div>
+        
+        <div class="compound">  
+            <div class="header"> 
+                <div class="button_menu__header">
+                    <div class="sidebar__title">skateboard</div><img class="menu" src="photo/square.svg" alt="" width="40">
+                </div> 
+                <div class="header__search">
+                    <div class="search__location">
+                        <form class="form">
+                            <input class="search" placeholder="Search">
+                            <a class="search_button" href=""></a>    
+                        </form>
+                    </div>   
+                </div>
 
-        <div class="sidebar__line"></div>
-
-        <div class="sidebar__CATEGORY">
-        <div class="sidebar__CATEGORY__text">CATEGORY</div>
-        <ul class="sidebar-list">
-            <li>
-                <button class="sidebar__CATEGORY__element">
-                <div class="sidebar__icon"><img src="photo/Home2.svg" alt="" width="20"></div>
-                <div class="element__text element__text__gray">Live Stream</div>
-                </button>
-            </li>
-            <li>
-                <button class="sidebar__CATEGORY__element">
-                <div class="sidebar__icon"><img src="photo/Arrow - Right.svg" width="15"></div>
-                <div class="element__text element__text__gray">Tutorial</div>       
-                </button>
-            </li>
-            <li>   
-                <button class="sidebar__CATEGORY__element">
-                <div class="sidebar__icon"><img src="photo/Download.svg" alt="" width="20"></div>
-                <div class="element__text element__text__gray">Competition</div>
-                </button>
-            </li>
-            <li>     
-                <button class="sidebar__CATEGORY__element">
-                <div class="sidebar__icon"><img src="photo/Wallet.svg" alt="" width="20"> </div>
-                <div class="element__text element__text__gray">Community</div>
-                </button>
-            </li> 
-        </ul>   
-        </div>
-
-        <div class="sidebar__line"></div>
-
-        <div class="location">
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-                <div class="location_text">Night mode</div> 
-            </label>
-        </div>
-    </div>
-<div class="compound">  
-    <div class="header">   
-        <div class="header__search">
-            <div class="search__location">
-            <form class="form">
-                <input class="search" placeholder="Search">
-                <button class="search_button"></button>    
-            </form>
-                </div>   
-        </div>
-
-        <div class="header__profile">
-            <img class="circle" src="./photo/image 14.png">
-            <p class="profile__text">Thomas</p>
-            <button class="profile_button">
+            <div class="header__profile">
+                <img class="circle" src="./photo/image 14.png">
+                <p class="profile__text">Thomas</p>
+                <button class="profile_button">
                 <img src="./photo/profile_arrow.svg">
-            </button>
-            <button class="profile_button">
+                </button>
+                <button class="profile_button">
                 <img class="location_notification" src="./photo/notification.svg">
-            </button>    
+                </button>    
+            </div>
         </div>    
     </div>
-
-    <div class="content">
-        <div class="content__title">Discover</div>
-        <div class="compound__content">
-            <div class="block-blue">
-                <img class="block-blue__photo" src="photo/image 1.png" alt="">
-                <div class="block-blue__text-block">
-                    <div class="block__title">How to do Basic Jumping and how to landing safely</div>
-                <div class="information-and-photos">
-                    <img src="photo/Thomas.png" alt="">
-                    <div class="information-text">
-                        <div class="name">Thomas Hope</div>
-                        <div class="views-weeks">53K views  •  2 weeks ago</div>
+        <div class="content_wrapper">
+            <div class="content"> 
+                <div class="discover__title">Discover</div>
+                <div class="discover">
+                   
+                    <div class="discover__card-blue">
+                        <img class="discover__card-blue__image" src="photo/image 1.png" alt="netu">
+                        <div class="card_content">
+                            <div class="card_text">How to do
+                                Basic Jumping
+                                and how to
+                                landing safely
+                            </div>
+                                <div class="avatar_profile">
+                                    <div class="photo_profile">
+                                        <img class="ellipse" src="photo/Ellipse 5.svg" alt="">
+                                        <img class="circle_photo" src="photo/image 2.png" alt="">
+                                        <img class="white_check-mark" src="photo/Group 213w.svg" alt="">
+                                    </div>
+                                    <div class="profile_text">
+                                        <div class="profile_text__name">Thomas Hope</div>
+                                        <div class="profile_info">53K views  •  2 weeks ago</div>
+                                    </div>
+                                </div>                             
+                        </div> 
+                        <div class="location_time">
+                            <div class="location_time__text">7 min</div>
+                        </div>   
+                    </div>
+                    <div class="discover__card-orange">
+                        <img class="discover__card-orange__image" src="photo/image 3.png" alt="netu">
+                        <div class="card_content">
+                            <div class="card_text text_mod">Skateboard
+                                Tips You need
+                                to know
+                            </div>
+                                <div class="avatar_profile profile_mod">
+                                    <div class="profile_text">
+                                        <div class="profile_text__name">Tony Andrew</div>
+                                        <div class="profile_info">53K views  •  2 weeks ago</div>
+                                    </div>
+                                    <div class="avatar_icon icon_mod">
+                                        <div class="photo_profile">
+                                            <img class="ellipse" src="photo/Ellipse 5.svg" alt="">
+                                            <img class="circle_photo" src="photo/image 4.png" alt="">
+                                            <img class="white_check-mark" src="photo/Group 213or.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="location_time">
+                            <div class="location_time__text">10 min</div>
+                        </div> 
                     </div>
                 </div>
-                <div class="time-block">
-                    <div class="time">7 min</div>
-                </div>    
-                </div>
                 
-            </div>
-            
-            <div class="block-orange">
-                <img class="block-orange__photo" src="photo/image 3.png" alt="">
+                <div class="title-mostWatched">Most Watched</div>
+                <div class="mostWatched">    
+                    <div class="lower-card">
+                        
+                        <img class="lower-card_img" src="photo/image 5.png" alt="netu">
+                        <div class="lower-card_content">
+                            <div class="box-dot_name">
+                                <div class="lower-card_nickname">Andy William</div>
+                                <div class="dot dot__green"></div>
+                            </div>
+                            <div class="video_name">Basic how to ride your skateboard comfortly</div>
+                            <div class="lower-card_viewer">53K views  •  2 weeks ago</div>
+                            <div class="lower-card_icon lower-card_icon__mode">
+                                <div class="photo_profile">
+                                    <img class="ellipse" src="photo/Ellipse 5.svg" alt="">
+                                    <img class="circle_photo" src="photo/image 10.png" alt="">
+                                    <img class="white_check-mark" src="photo/Group 213.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location_time location_mod">
+                            <p class="location_time__text">7 min</p>
+                        </div> 
+                    </div>
+
+                    <div class="lower-card">
+                        <img class="lower-card_img" src="photo/image 7.png" alt="netu">
+                        <div class="lower-card_content">
+                            <div class="box-dot_name">
+                                <div class="lower-card_nickname">Johny Wise</div>
+                                <div class="dot dot__orange"></div>
+                            </div>
+                            <div class="video_name">Prepare for your first skateboard jump</div>
+                            <div class="lower-card_viewer">53K views  •  2 weeks ago</div>
+                            <div class="lower-card_icon">
+                                <div class="photo_profile">
+                                    <img class="ellipse" src="photo/Ellipse 5.svg" alt="">
+                                    <img class="circle_photo" src="photo/image 12.png" alt="">
+                                    <img class="white_check-mark" src="photo/Group 213.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location_time location_mod">
+                            <p class="location_time__text">7 min</p>
+                        </div> 
+                    </div>
+
+                    <div class="lower-card">
+                        <img class="lower-card_img" src="photo/image 6.png" alt="netu">
+                        <div class="lower-card_content">
+                            <div class="box-dot_name">
+                            <div class="lower-card_nickname">
+                                Budi Hakim
+                            </div>
+                            <div class="dot dot__orange"></div>
+                            </div>
+                            <div class="video_name">Tips to playing skateboard on the ramp</div>
+                            <div class="lower-card_viewer">53K views  •  2 weeks ago</div>
+                            <div class="lower-card_icon">
+                                <div class="photo_profile">
+                                    <img class="ellipse" src="photo/Ellipse 5.svg" alt="">
+                                    <img class="circle_photo" src="photo/image 11.png" alt="">
+                                    <img class="white_check-mark" src="photo/Group 213.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location_time location_mod">
+                            <p class="location_time__text">7 min</p>
+                        </div> 
+                    </div>
+
+                    <div class="lower-card">
+                        <img class="lower-card_img" src="photo/image 8.png" alt="netu">
+                        <div class="lower-card_content">
+                            <div class="box-dot_name">
+                                <div class="lower-card_nickname">Wijaya Abadi</div>
+                                <div class="dot dot__green"></div>
+                            </div>
+                            <div class="video_name">Basic Equipment to play skateboard safely</div>
+                            <div class="lower-card_viewer">53K views  •  2 weeks ago</div>
+                            <div class="lower-card_icon lower-card_icon__mode">
+                                <div class="photo_profile">
+                                    <img class="ellipse" src="photo/Ellipse 5.svg" alt="">
+                                    <img class="circle_photo" src="photo/image 13.png" alt="">
+                                    <img class="white_check-mark" src="photo/Group 213.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location_time location_mod">
+                            <p class="location_time__text">7 min</p>
+                        </div> 
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-    </div>
-</div>  
-    </div>
+
     </div>
 
 </body>
